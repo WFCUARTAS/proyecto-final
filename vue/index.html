@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/styles/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Peaku</title>
+</head>
+<body class="bg-color-1">
+    <!-- ENCABEZADO-->
+    <head >
+        <!-- menu para computadores-->
+        <div class="d-md-block d-none">
+            <div class="row margenes bg-color-1" style="font-size: 1rem; ">
+                <div class="col-3 my-auto"> 
+                    <img src="./assets/Logo.png" class="img-fluid" alt="logo">
+                </div>
+                <div class="col-6" >
+                    <nav class="navbar navbar-expand-sm justify-content-center ">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Destination</a></li>
+                            <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Tour</a></li>
+                            <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3 d-flex my-auto mx-0">    
+                    <button class="btn col-6 " style="color: #FA7436;">Login</button>
+                    <button class="btn col-6 text-white " style="background-color: #FA7436;">Sign up</button>       
+                </div>
+            </div>
+        </div>
+        <!-- menu para celulres -->
+        <div class="d-md-none d-block">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-dark ms-1 mt-1" data-bs-toggle="collapse" data-bs-target="#Menu"><i class="bi bi-list"></i></button>
+                    <img  src="./assets/Logo.png" class="img-fluid" alt="logo">
+                </div>
+                <button class="btn col-3 my-1" style="color: #FA7436;">Login</button>
+                <button class="btn col-3 text-white my-1" style="background-color: #FA7436;">Sign up</button> 
+            </div>
+            <div id="Menu" class="collapse">
+                <nav class="navbar ps-3 bg-color-2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Destination</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Tour</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+
+    </head>
+
+    
+
+    <!--SECCION UNO -->
+    <section class="bg-color-1">
+        <!--SECCION imagen principal-->
+        <section class="row margenes">
+            <div class="col-sm-6 col-12 d-grid gap-2 mx-auto my-auto mt-5">
+                <div class="justify-content-center fw-bold display-5 mb-2 mt-2" style="font-family: Georgia;">
+                    Get started your exciting <span  style="color: #FA7436;">journey</span> with us.
+                </div>
+                <div class="justify-content-center  mb-4 text-secondary " style="font-size: 20px;">
+                    A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.  
+                </div>
+                <div class="text-sm-start text-center">
+                    <button class="btn btn-lg mb-5 " style="color: #FA7436; border-color: #FA7436;" >Discover Now</button>
+                </div>
+                
+            </div>
+            <div class="col-sm-6 col-12">
+                <img class="img-fluid px-5 px-sm-0" src="./assets/imagen-principal.png">
+            </div>
+        </section>
+
+        <!--SECCION DE BUSQUEDA-->
+        <section class="row pt-4 pb-5 margenes" >
+            <div class="col-10 mx-auto rounded shadow bg-white">
+                <div class="d-flex flex-sm-row flex-column">
+                    <div class="dropdown mx-auto mt-3 ">
+                        <button class="btn bg-white  dropdown-toggle ps-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Locations
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        <p class="text-secondary">Where are you going</p>
+                    </div>
+                    <div class="dropdown mx-auto mt-3">
+                        <button class="btn bg-white dropdown-toggle ps-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Date
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        <p class="text-secondary">Where you will go</p>
+                    </div>
+                    <div class="dropdown mx-auto mt-3">
+                        <button class="btn bg-white  dropdown-toggle ps-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Guest
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        <p class="text-secondary">Number of guest</p>
+                    </div>
+                    <button class="btn text-white mx-auto my-auto" style="background-color: #FA7436;">Explore Now</button>  
+                </div>
+            </div>
+        </section>
+    </section>
+
+     <!--SECCION DOS-->
+    <section class="pb-4 bg-color-2" >
+
+        <section class="row margenes pt-5 mb-4">
+
+            <div class="col-md-3 col-1"></div>
+            <div class="col-md-6 col-10 pt-5 ">
+                <div class=" text-center fw-bold  mb-3" style="font-family: Georgia; font-size: 5vh;">
+                    Things you need <span  style="color: #FA7436;">to do</span>
+                </div>
+                <div class="text-center  mb-4 text-secondary " style="font-size: 18px;">
+                   We ensure that you'll embark on a perfectly planned, safe vacation at a price you can afford.  
+                </div>
+            </div>
+            <div class="col-md-3 col-1 d-md-block d-none">
+                <img class="img-fluid" src="./assets/aviones.png" alt="aviones">
+            </div>
+            
+        </section>
+
+        <section class="row margenes mb-4 pb-5">
+            <div class="row">
+                <div  class="col-sm py-4 bg-white shadow mx-3 rounded">
+                    <img class=" ms-4 mb-4" src="./assets/Group1.png" alt="grupo 1">
+                    <h5 class="ms-4 mb-2 fw-bold ">Sing up</h2>
+                    <p class="ms-4 text-secondary" style="font-size: 2vh;">Completes all the work associated with planning and processing</p>
+                </div>
+                <div  class="col-sm py-4 bg-white shadow mx-3 rounded">
+                    <img class=" ms-4 mb-4 fw-bold" src="./assets/Group2.png" alt="grupo 1">
+                    <h5 class="ms-4 mb-2">Worth of Money</h2>
+                    <p class="ms-4 text-secondary" style="font-size: 2vh;">After successful access the book from exclusive deals & pricong</p>
+                </div>
+                <div  class="col-sm py-4 bg-white shadow mx-3 rounded">
+                    <img class=" ms-4 mb-4" src="./assets/Group3.png" alt="grupo 1">
+                    <h5 class="ms-4 mb-2 fw-bold">Exciting Travel</h2>
+                    <p class="ms-4 text-secondary" style="font-size: 2vh;">Start and explore a wide range of exciting travel experience</p>
+                </div>
+            </div>
+            
+        </section>
+        
+    </section>
+
+    <!--SECCION TRES -->
+    <section class="py-5 bg-color-1" >
+        <!--texto 1 de la seccion-->
+        <section class="margenes mb-5">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="text-center fw-bold display-6 " style="font-family: Georgia;">
+                        Exclusive <span  style="color: #FA7436;">deals & discounts</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="text-secondary text-center">
+                        Discover our fantastic eartly booking discounts & start planning your jouyney. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--tarjetas 1 de la seccion -->
+        <section class="margenes py-5 mb-5">
+            <div class="card-group">
+                <div class="card mx-2 pb-2 rounded">
+
+                    <div class="image-container">
+                        <img class="card-img-top rounded" src="./assets/madrid.png" alt="Imagen" >
+                        <a href="#" class="btn overlay-button" style="background-color: #FA7436;">Book Now</a>
+                    </div>
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Madrid</h5>
+                    <div class="card-text row" style="font-size: 14px;">
+                        <div class="col-5 text-muted"> <i class="bi bi-geo-alt-fill"></i> Spain</div>
+                        <div class="col-4 text-decoration-line-through text-muted text-end">$950</div>
+                        <div class="col-3 fw-bold rounded px-1 text-end text-center" style="color: #FA7436; background-color: #fa743666;">$850</div>            
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded">
+                    <div class="image-container">
+                        <img src="./assets/firenze.png" class="card-img-top rounded" alt="...">
+                        <a href="#" class="btn overlay-button" style="background-color: #FA7436;">Book Now</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Firenze</h5>
+                        <div class="card-text row" style="font-size: 14px;">
+                            <div class="col-5 text-muted"> <i class="bi bi-geo-alt-fill"></i> Italy</div>
+                            <div class="col-4 text-decoration-line-through text-muted text-end">$850</div>
+                            <div class="col-3 fw-bold rounded px-1 text-end text-center" style="color: #FA7436; background-color: #fa743666;">$750</div>            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded">
+                    <div class="image-container">
+                        <img src="./assets/paris.png" class="card-img-top rounded" alt="...">
+                        <a href="#" class="btn overlay-button" style="background-color: #FA7436;">Book Now</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <div class="card-text row" style="font-size: 14px;">
+                            <div class="col-5 text-muted"> <i class="bi bi-geo-alt-fill"></i>Francia</div>
+                            <div class="col-4 text-decoration-line-through text-muted text-end">$699</div>
+                            <div class="col-3 fw-bold rounded px-1 text-end text-center" style="color: #FA7436; background-color: #fa743666;">$599</div>            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded">
+                    <div class="image-container">
+                        <img src="./assets/london.png" class="card-img-top rounded" alt="...">
+                        <a href="#" class="btn overlay-button" style="background-color: #FA7436;">Book Now</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">London</h5>
+                        <div class="card-text row" style="font-size: 14px;">
+                            <div class="col-5 text-muted"> <i class="bi bi-geo-alt-fill"></i> Uk</div>
+                            <div class="col-4 text-decoration-line-through text-muted text-end">$850</div>
+                            <div class="col-3 fw-bold rounded px-1 text-end text-center" style="color: #FA7436; background-color: #fa743666;">$850</div>            
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <!--texto 2 de la seccion-->
+        <section class="margenes pt-5">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="text-center fw-bold display-6 " style="font-family: Georgia;">
+                        Best <span  style="color: #FA7436;">Vacation plan</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="text-secondary text-center">
+                        Plan your perfect vacation with our travel agency. choose among hundreds of all-inclusive offers! 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--tarjetas 2 de la seccion -->
+        <section class="margenes py-5">
+            <div class="card-group">
+                <div class="card mx-2 pb-2 rounded">
+
+                    <div class="image-container ">
+                        <img class="card-img-top rounded" src="./assets/italty.png" alt="Imagen" >
+                        <a href="#" class="btn overlay-button" style="background-color: #FA7436;">Book Now</a>
+                    </div>
+                  
+                  <div class="card-body">
+                    <div class="card-title row">
+                        <h5 class="col-8">Rome, Italty</h5>
+                        <h5 class="col-4 text-end"  style="color: #FA7436;">$5,42K</h5>
+                    </div>
+                    <div class="card-text row" style="font-size: 14px;">
+                        <div class="col-8 text-muted"> <i class="bi bi-send-fill" style="color: #FA7436;"></i> 10 Days trip</div>
+                        <div class="col-4 text-end text-muted"><i class="bi bi-star-fill text-warning"></i> 4.8</div>            
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded">
+                    <div class="image-container">
+                        <img src="./assets/uk.png" class="card-img-top rounded" alt="...">
+                        <a href="#" class="btn overlay-button" style="background-color: #FA7436;">Book Now</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title row">
+                            <h5 class="col-8">London, UK</h5>
+                            <h5 class="col-4 text-end"  style="color: #FA7436;">$2,42K</h5>
+                        </div>
+                        <div class="card-text row" style="font-size: 14px;">
+                            <div class="col-8 text-muted"> <i class="bi bi-send-fill" style="color: #FA7436;"></i> 07 Days trip</div>
+                            <div class="col-4 text-end text-muted"><i class="bi bi-star-fill text-warning"></i> 4.7</div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded">
+                    <div class="image-container">
+                        <img src="./assets/japan.png" class="card-img-top rounded" alt="...">
+                        <a href="#" class="btn overlay-button" style="background-color: #FA7436;">Book Now</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title row">
+                            <h5 class="col-8">Osaka, Japan</h5>
+                            <h5 class="col-4 text-end"  style="color: #FA7436;">$5,42K</h5>
+                        </div>
+                        <div class="card-text row" style="font-size: 14px;">
+                            <div class="col-8 text-muted"> <i class="bi bi-send-fill" style="color: #FA7436;"></i> 10 Days trip</div>
+                            <div class="col-4 text-end text-muted"><i class="bi bi-star-fill text-warning"></i> 4.8</div>    
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+        </section>
+
+    </section>
+    
+    <!--SECCION CUATRO-->
+    <section class="py-5 bg-color-2" >
+        <section class="margenes row">
+            <div class="col-md-5 my-auto col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="fw-bold display-6 " style="font-family: Georgia;">
+                            What people say <span  style="color: #FA7436;">about</span>
+                        </div>
+                        <p class="text-secondary text-left">our Clients send us bunch of smilies with our service and we love them.</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="fw-bold display-6 " style="font-family: Georgia;">
+                            What Hotel say <span  style="color: #FA7436;">about</span>
+                        </div>
+                        <p class="text-secondary text-left">our Clients send us bunch of smilies with our service and we love them.</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="fw-bold display-6 " style="font-family: Georgia;">
+                            What agenci say <span  style="color: #FA7436;">about</span>
+                        </div>
+                        <p class="text-secondary text-left">our Clients send us bunch of smilies with our service and we love them.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div  class="text-left">
+                    <a class="btn fs-1" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class="bi bi-arrow-left-circle-fill" style="color: #FA7436;"></i>
+                      </a>
+                      <a class="btn fs-1" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="bi bi-arrow-right-circle-fill" style="color: #FA7436;"></i>
+                      </a>
+                </div>
+            </div>
+            
+            <div class="col-md-7 col-12">
+                <img class="img-fluid" src="./assets/imagen2.png">
+            </div>
+        </section>
+    </section>
+
+    <!--SECCION CINCO -->
+    <section class=" bg-color-1">
+
+        <div class="text-center fw-bold display-6 margenes" style="font-family: Georgia;">
+            Get update with <span  class="text-orange">latest blog</span>
+        </div>  
+
+        <section class="margenes pt-5 mb-5">
+            <div class="card-group">
+                <div class="card mx-2 pb-2 rounded border-0 bg-color-1" >
+
+                    <div class="image-container">
+                        <img class="card-img-top rounded" src="./assets/blog1.png" alt="Imagen" >
+                        <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
+                    </div>
+                  
+                  <div class="card-body ps-0">
+                    <h6 class="card-title ">The Amazing Difference a Year of Travelling.</h6>
+                    <div class="card-text text-muted text-left" style="font-size: 14px;">
+                        July 27, 2021
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded border-0 bg-color-1">
+                    <div class="image-container">
+                        <img  class="card-img-top rounded" src="./assets/blog2.png" alt="...">
+                        <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
+                    </div>
+                    <div class="card-body ps-0">
+                        <h6 class="card-title">Travel far enough, you meet yourself.</h6>
+                        <div class="card-text text-muted text-left" style="font-size: 14px;">
+                            July 27, 2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded border-0 bg-color-1">
+                    <div class="image-container">
+                        <img class="card-img-top rounded" src="./assets/blog3.png"  alt="...">
+                        <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
+                    </div>
+                    <div class="card-body ps-0">
+                        <h6 class="card-title">How to Save Money While Visiting Africa.</h6>
+                        <div class="card-text text-muted text-left" style="font-size: 14px;">
+                            July 27, 2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 pb-2 rounded border-0 bg-color-1">
+                    <div class="image-container">
+                        <img class="card-img-top rounded" src="./assets/blog4.png"  alt="...">
+                        <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
+                    </div>
+                    <div class="card-body ps-0">
+                        <h6 class="card-title">Reflections on 5 Months of Travel: Time to Hang.</h6>
+                        <div class="card-text text-muted text-left" style="font-size: 14px;">
+                            July 27, 2021
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <section class=" container bg-color-orange margenes mb-5  rounded-4 row justify-content-center" >
+            
+            <div class="position-relative">
+                <img class="position-absolute" src="./assets/palmas.png" alt="" style="top:0; right: 0; width: 15%;">
+            </div>   
+
+            <div class="col-md-7 col-10 my-5 ">
+                <div class="h2 fw-semibold text-white text-center " style="font-family: Georgia;">
+                    Subscribe and get exclusive deals & offer
+                </div>
+
+                <div class="d-flex my-5 py-1 bg-white rounded">
+                    <input type="email" class="form-control border-0 mx-1" placeholder="Enter your mail" aria-label="Recipient's username" aria-describedby="button-addon2" style="z-index: 2;">
+                    <button class="btn mx-1 my-1 bg-color-orange text-white" type="button" style="z-index: 2;">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="position-relative">
+                <div class="position-absolute circle" style="width: 200px;  height: 200px; "></div>
+                <div class="position-absolute circle" style="width: 220px;  height: 220px; "></div>
+                <div class="position-absolute circle" style="width: 240px;  height: 240px; "></div>
+                <div class="position-absolute circle" style="width: 260px;  height: 260px; "></div>
+                <div class="position-absolute circle" style="width: 280px;  height: 280px; "></div>
+                <div class="position-absolute circle" style="width: 300px;  height: 300px; "></div>
+            </div>              
+
+        </section>
+    </section>
+
+
+    <footer class=" position-relative py-5 bg-color-2" style="z-index: 1;" >
+        
+        <section class="row margenes ps-5 ps-md-0 " style="font-size: 2.5vh;">
+
+            <div class="col-md-3 col-sm-6 col-10 text-start p-md-0 ">
+                <img class="img-fluid" src="./assets/Logo.png" alt="logo">
+                <p class="text-muted my-4" style="font-size: 2vh;">Book your trip in minute, get full Control for much longer.</p>
+                <div class="d-flex">
+                    <i class="fs-4 mx-auto bi bi-facebook text-orange"></i>
+                    <i class="fs-4 mx-auto bi bi-instagram"></i>
+                    <i class="fs-4 mx-auto bi bi-twitter text-orange"></i>
+                    <i class="fs-4 mx-auto"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-1 col-10"></div>
+
+            <div class="col-md-2 col-sm-5 col-10 d-flex flex-column">
+                <h6 class="fw-bold">Company</h6>
+                <a href="#" class="text-muted text-decoration-none my-1" >About</a>
+                <a href="#" class="text-muted text-decoration-none my-1" >Careers</a>
+                <a href="#" class="text-muted text-decoration-none my-1" >Logistic</a>
+                <a href="#" class="text-muted text-decoration-none my-1" >Privacy & Policy</a>
+            </div>
+
+            <div class="col-md-2 col-sm-7 col-10 d-flex flex-column">
+                <h6 class="fw-bold">Contact</h6>
+                <a href="#" class="text-muted text-decoration-none my-1" >Help/FAQ</a>
+                <a href="#" class="text-muted text-decoration-none my-1" >Press</a>
+                <a href="#" class="text-muted text-decoration-none my-1" >Affilates</a>
+            </div>
+
+            <div class="col-md-2 col-sm-5 col-10 d-flex flex-column">
+                <h6 class="fw-bold">More</h6>
+                <a href="#" class="text-muted text-decoration-none my-1" >Press Center</a>
+                <a href="#" class="text-muted text-decoration-none my-1" >Our Blog</a>
+                <a href="#" class="text-muted text-decoration-none my-1" >Low fare tips</a>
+            </div>
+            
+        </section>
+
+        <hr class="margenes mt-3 mb-4">
+
+        <section class="row margenes text-muted" style="font-size: 2vh;">
+            <div class="col-md-6 col-12 text-md-start text-center">
+                Copyright, Trabook 2022. All right reserved.
+            </div>
+            <div class="col-md-6 col-12 text-md-end text-center">
+                Terms & Conditions
+            </div>
+        </section>
+
+    </footer>
+
+</body>
+</html>

@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cards import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('mejores/', views.Listar_mejores),
+    path('exclusivas/', views.Listar_exclusivas),
 ]

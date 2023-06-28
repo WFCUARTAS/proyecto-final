@@ -200,8 +200,8 @@
 
         <!--tarjetas 1 de la seccion -->
         <section class="margenes py-5 mb-5">
-            <div class="card-group">
-
+            <div v-if="exclusivas.length==0" class="loading-circle mx-auto"></div>
+            <div v-else class="card-group">
                 <div v-for="(item, index) in exclusivas" :key="index" class="card mx-2 pb-2 rounded">
                     
                     <div class="image-container">
@@ -218,8 +218,8 @@
                     </div>
                   </div>
                 </div>
-
             </div>
+
         </section>
 
         <!--texto 2 de la seccion-->
@@ -240,7 +240,8 @@
 
         <!--tarjetas 2 de la seccion -->
         <section class="margenes py-5">
-            <div class="card-group">
+            <div v-if="mejores.length==0" class="loading-circle mx-auto"></div>
+            <div v-else class="card-group">
                 <div v-for="(item, index) in mejores" :key="index" class="card mx-2 pb-2 rounded">
                     <div class="image-container ">
                         <img class="card-img-top rounded" :src="'./assets/'+item.imagen_url" alt="Imagen" >
@@ -316,61 +317,23 @@
         </div>  
 
         <section class="margenes pt-5 mb-5">
-            <div class="card-group">
-                <div class="card mx-2 pb-2 rounded border-0 bg-color-1" >
+            <div v-if="blogs.length==0" class="loading-circle mx-auto"></div>
+            <div v-else class="card-group">
+                <div v-for="(item, index) in blogs" :key="index" class="card mx-2 pb-2 rounded border-0 bg-color-1" >
 
                     <div class="image-container">
-                        <img class="card-img-top rounded" src="./assets/blog1.png" alt="Imagen" >
+                        <img class="card-img-top rounded" :src="'./assets/'+item.imagen_url" alt="Imagen" >
                         <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
                     </div>
                   
                   <div class="card-body ps-0">
-                    <h6 class="card-title ">The Amazing Difference a Year of Travelling.</h6>
+                    <h6 class="card-title ">{{item.titulo}}</h6>
                     <div class="card-text text-muted text-left" style="font-size: 14px;">
-                        July 27, 2021
+                        {{item.fecha}}
                     </div>
                   </div>
                 </div>
-
-                <div class="card mx-2 pb-2 rounded border-0 bg-color-1">
-                    <div class="image-container">
-                        <img  class="card-img-top rounded" src="./assets/blog2.png" alt="...">
-                        <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
-                    </div>
-                    <div class="card-body ps-0">
-                        <h6 class="card-title">Travel far enough, you meet yourself.</h6>
-                        <div class="card-text text-muted text-left" style="font-size: 14px;">
-                            July 27, 2021
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mx-2 pb-2 rounded border-0 bg-color-1">
-                    <div class="image-container">
-                        <img class="card-img-top rounded" src="./assets/blog3.png"  alt="...">
-                        <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
-                    </div>
-                    <div class="card-body ps-0">
-                        <h6 class="card-title">How to Save Money While Visiting Africa.</h6>
-                        <div class="card-text text-muted text-left" style="font-size: 14px;">
-                            July 27, 2021
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mx-2 pb-2 rounded border-0 bg-color-1">
-                    <div class="image-container">
-                        <img class="card-img-top rounded" src="./assets/blog4.png"  alt="...">
-                        <a href="#" class="btn overlay-button bg-color-orange" >Book Now</a>
-                    </div>
-                    <div class="card-body ps-0">
-                        <h6 class="card-title">Reflections on 5 Months of Travel: Time to Hang.</h6>
-                        <div class="card-text text-muted text-left" style="font-size: 14px;">
-                            July 27, 2021
-                        </div>
-                    </div>
-                </div>
-              </div>
+            </div>
         </section>
 
         <section class=" container bg-color-orange margenes mb-5  rounded-4 row justify-content-center" >

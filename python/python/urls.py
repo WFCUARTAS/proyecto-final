@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('mejores/', views.Listar_mejores),
     path('exclusivas/', views.Listar_exclusivas),
+    path('blogs/', views.Listar_blogs),
 ]

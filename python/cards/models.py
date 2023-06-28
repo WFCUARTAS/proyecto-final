@@ -16,3 +16,9 @@ class Mejores(models.Model):
     precio = models.DecimalField(max_digits=3, decimal_places=2)
     calificacion = models.DecimalField(max_digits=3, decimal_places=2)
     imagen_url = models.CharField(max_length=200)
+
+class Blogs(models.Model):
+    titulo = models.CharField(max_length=200)
+    fecha = models.CharField(max_length=200)
+    contenido = models.TextField()
+    imagen_url = models.CharField(max_length=200)
